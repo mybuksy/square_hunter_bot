@@ -1,0 +1,10 @@
+{
+  "name": "square-hunter-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx @openclaw/cli start"
+  },
+  "dependencies": {
+    "@openclaw/cli": "latest"
+  }
+}
