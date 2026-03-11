@@ -2,12 +2,15 @@
   "name": "square-hunter-bot",
   "version": "1.0.0",
   "description": "Binance Square Search & Filtering Agent on OpenClaw",
+  "type": "module",
   "scripts": {
-    "start": "npx @openclaw/cli start"
+    "start": "openclaw start"
   },
   "dependencies": {
-    "@openclaw/cli": "latest"
+    "openclaw": "latest"
   }
 }
+
+
 
 
