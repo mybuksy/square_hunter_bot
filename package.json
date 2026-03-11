@@ -4,10 +4,9 @@
   "description": "Binance Square Search & Filtering Agent on OpenClaw",
   "type": "module",
   "scripts": {
-    "start": "openclaw models set groq/llama-3.3-70b-versatile && openclaw config set plugins.entries.telegram.enabled true && openclaw config set channels.telegram.enabled true && openclaw config set channels.telegram.allowFrom '[\"*\"]' && openclaw config set channels.telegram.dmPolicy open && openclaw config set channels.telegram.botToken \"$TELEGRAM_BOT_TOKEN\" && openclaw gateway start"
+    "start": "mkdir -p ~/.openclaw/workspace && cp -f SOUL.md IDENTITY.md ~/.openclaw/workspace/ || true && openclaw models set groq/llama-3.3-70b-versatile && openclaw config set plugins.entries.telegram.enabled true && openclaw config set channels.telegram.enabled true && openclaw config set channels.telegram.allowFrom '[\"*\"]' && openclaw config set channels.telegram.dmPolicy open && openclaw config set channels.telegram.botToken \"$TELEGRAM_BOT_TOKEN\" && NODE_OPTIONS='--dns-result-order=ipv4first' openclaw gateway start"
   },
   "dependencies": {
     "openclaw": "latest"
   }
 }
-
