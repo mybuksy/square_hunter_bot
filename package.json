@@ -4,14 +4,10 @@
   "description": "Binance Square Search & Filtering Agent on OpenClaw",
   "type": "module",
   "scripts": {
-    "start": "openclaw gateway start"
+    "start": "openclaw config set plugins.entries.telegram.enabled true && openclaw config set channels.telegram.enabled true && openclaw config set channels.telegram.dmPolicy open && openclaw config set channels.telegram.botToken \"$TELEGRAM_BOT_TOKEN\" && openclaw gateway start"
   },
   "dependencies": {
     "openclaw": "latest"
   }
 }
-
-
-
-
 
