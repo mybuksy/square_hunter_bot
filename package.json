@@ -4,12 +4,13 @@
   "description": "Binance Square Search & Filtering Agent on OpenClaw",
   "type": "module",
   "scripts": {
-    "start": "openclaw start"
+    "start": "openclaw gateway start"
   },
   "dependencies": {
     "openclaw": "latest"
   }
 }
+
 
 
 
